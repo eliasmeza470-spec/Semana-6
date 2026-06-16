@@ -1,0 +1,6 @@
+{
+  "id": 1,
+  "titulo": "Falla en conexión",
+  "descripcion": "El servidor no responde a las peticiones POST",
+  "prioridad": "Alta"
+}

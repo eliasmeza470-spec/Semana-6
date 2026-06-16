@@ -1,0 +1,21 @@
+const express = require('express');
+const app = express();
+
+// Middleware para procesar JSON
+app.use(express.json());
+
+// Ruta para registro
+app.post('/registro', (req, res) => {
+    console.log('Datos recibidos en /registro:', req.body);
+    res.json({ mensaje: "Registro exitoso", datos: req.body });
+});
+
+// Ruta para incidencia
+app.post('/incidencia', (req, res) => {
+    console.log('Datos recibidos en /incidencia:', req.body);
+    res.json({ mensaje: "Incidencia recibida", datos: req.body });
+});
+
+app.listen(3000, () => {
+    console.log('Servidor activo en http://localhost:3000');
+});
